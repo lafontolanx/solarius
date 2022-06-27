@@ -1,4 +1,4 @@
-<h1><img src="../assets/logotipo.svg"></h1>
+<h1><img src="./assets/logotipo.svg"></h1>
 
 ## Índice
 
