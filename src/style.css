@@ -1,0 +1,328 @@
+* {
+    margin: 0px;
+}
+
+html, body {
+    overflow-y: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #280B57;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#curiosidades::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+#curiosidades::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background: #1F0845;        /* color of the tracking area */
+}
+  
+#curiosidades::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: #4B14A3;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid #1F0845;  /* creates padding around scroll thumb */
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+
+    background-color: #1F0845;
+    padding: .5rem 2rem .5rem .5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+nav {
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    color: #F4F4F4;
+}
+
+nav a:focus:after,
+nav a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+nav a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -0.008rem;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #EC407A;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.main {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    gap: .8rem;
+
+    padding: 2rem;
+    padding-left: 6rem;
+}
+
+.title-main {
+    background: url('../assets/vector-title.svg') no-repeat;
+    background-size: contain;
+    padding: 2rem 0;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.astronauta {
+    flex: 1;
+    height: 70vh;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    font-weight: 400;
+    color: #F4F4F4;
+}
+
+h4 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #F4F4F4;
+
+    width: 70%;
+
+    margin-bottom: 2rem;
+}
+
+.button {
+    background: #EC407A;
+    color: white;
+    font-family: 'Poppins';
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 1.4em;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+   
+.button .button-icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 1.1em;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+   
+.button:hover .button-icon {
+    width: calc(100% - 0.6em);
+}
+   
+.button:active .button-icon {
+    transform: scale(0.95);
+}
+
+.main-nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-planeta {
+    border-bottom: 4px solid white;
+    padding: 0 4rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2rem;
+}
+
+.info1, .info2 {
+    height: 19rem;
+    max-width: 32rem;
+    flex: 1;
+    background: #4B14A3;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: .8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+li {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #F4F4F4;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    padding-bottom: .8rem;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    font-weight: 400;
+    color: #F4F4F4;
+}
+
+.info2 p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #F4F4F4;
+    border-bottom: 2px solid #F4F4F4;
+    padding: 1.8rem 0;
+    letter-spacing: .2rem;
+    text-align: center;
+
+    align-self: center;
+}
+
+.info2 p:last-child {
+    border-bottom: none;
+}
+
+.info2 p strong {
+    font-size: 16px;
+    font-weight: 800;
+
+    background-color: #1F0845;
+    padding: .2rem .3rem .2rem .5rem;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+.planeta {
+    height: 25rem;
+}
+
+.planeta-terra {
+    height: 23.7rem;
+    margin-top: 1.2rem;
+}
+
+.planeta-saturno {
+    height: 21.7rem;
+    margin-top: 3.3rem;
+}
+
+.planeta-urano {
+    height: 19.8rem;
+    margin-top: 2.6rem;
+    margin-bottom: 2.6rem;
+}
+
+#curiosidades {
+    width: 150vw;
+    height: 100vh;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: .5rem;
+}
+
+#items {
+    flex: 1;
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 2.5rem;
+}
+
+.item {
+    background-color: #EC407A;
+    flex: 1;
+    height: 18rem;
+    min-width: 20rem;
+    border-radius: 25px;
+    padding: .8rem;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item h5 {
+    width: auto;
+    height: 100%;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: white;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12vh;
+}
+
+.imagens img {
+    width: 10%;
+}
+
