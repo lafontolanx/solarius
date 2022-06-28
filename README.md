@@ -2,11 +2,12 @@
 
 ## Índice
 
-* [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#status-do-projeto)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias Utilizadas](#tecnologias-utilizadas)
-* [Desenvolvedor](#desenvolvedor)
+* [Descrição do Projeto](#✏️-descrição-do-projeto)
+* [Status do Projeto](#⌛-status-do-projeto)
+* [Tecnologias Utilizadas](#💻-tecnologias-utilizadas)
+* [Desenvolvedor](#👩‍💻-desenvolvedor)
+* [Paleta de Cores](#🎨-paleta-de-cores)
+* [Font-family](#✒️-font-family)
 
 ## ✏️ Descrição do Projeto:
 
@@ -20,15 +21,12 @@ O Solarius tem como objetivo proporcionar uma experiência imersiva no universo,
 <br><br>
 
 
-## 📁 Acesso ao Projeto:
-<br><br>
-
-
 ## 💻 Tecnologias Utilizadas:
 
     * Figma;
     * HTML;
-    * CSS.
+    * CSS;
+    * JavaScript.
 <br><br>
 
 
