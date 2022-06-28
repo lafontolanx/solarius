@@ -16,17 +16,17 @@ html, body {
 }
 
 #curiosidades::-webkit-scrollbar, body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 12px;
 }
   
 #curiosidades::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
-    background: #1F0845;        /* color of the tracking area */
+    background: #1F0845; 
 }
   
 #curiosidades::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
-    background-color: #4B14A3;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 2px solid #1F0845;  /* creates padding around scroll thumb */
+    background-color: #4B14A3; 
+    border-radius: 20px;  
+    border: 2px solid #1F0845;
 }
 
 a {
