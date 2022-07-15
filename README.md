@@ -17,7 +17,7 @@ O Solarius tem como objetivo proporcionar uma experiência imersiva no universo,
 
 ## ⌛ Status do Projeto:
 
-`Projeto em concluído`✅
+`Projeto concluído`✅
 <br><br>
 
 
